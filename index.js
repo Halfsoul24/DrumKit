@@ -1,5 +1,7 @@
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
+//Create sound and animation
+
 for (var i = 0; i < numberOfDrumButtons; i++) {
 
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
@@ -22,7 +24,7 @@ document.addEventListener("keypress", function(event) {
 
 });
 
-
+// soundmaking function
 function makeSound(key) {
 
   switch (key) {
@@ -68,6 +70,7 @@ function makeSound(key) {
 }
 
 
+// function checking active button
 function buttonAnimation(currentKey) {
 
   var activeButton = document.querySelector("." + currentKey);
